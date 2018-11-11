@@ -13,8 +13,27 @@ html {
 body {
   font-family: 'Roboto', sans-serif;  
   color: #fff;
-  background-color: #ccc;
-  
+  background-color: #313131;
+}
+
+/* Base styles */
+
+/* p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  color: #32C7BC;
+} */
+
+/* typography */
+
+.digit-display {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  color: #FF004E;
 }
 
 /* restricts app width and center*/
@@ -25,12 +44,51 @@ body {
   background-color: #313131;
 }
 
+.app-header {
+  text-align: center;
+}
+
 .display-container {
   padding: 20px;
   text-align: center;
 }
 
+.print-exercise {
+  text-align: center;
+}
+
+.fw-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.fw-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(211, 211, 211);
+  outline: 0;
+  border: 2px solid #FF004E;
+  border-right: 0;
+  border-left: 0;
+  background-color: #252525;
+  transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+}
+
+.fw-input:focus {
+  color: #F2F2F2;
+  background-color: #141414;
+}
+
 .countdown-display {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -40,15 +98,55 @@ h2 {
   text-transform: uppercase;
 }
 
-p {
-  font-family: 'Oswald', sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  line-height: 1;
-  color: #32C7BC;
-}
-
 .rep-count {
-  text-align: left;
+  margin-top: 20px;
+  text-align: center;
 }
 
+  .rep-count .digit-display {
+    font-size: 60px;
+    color: #fff;
+  }
+
+.rep-controls {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #191919;
+  border-top: 5px solid #FF004E;
+  height: 80px;
+}
+
+.action-button {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #4E4E4E;
+  background-color: #E1E1E1;
+  border: 2px solid #B9B9B9;
+  border-radius: 50%;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.action-button:hover {
+  background-color: #9e9e9e;
+}
+
+.action-button.rest {
+  z-index: 100;
+  left: 20px;
+}
+
+.action-button.rep {
+  z-index: 100;
+  right: 20px;
+}
