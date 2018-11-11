@@ -41,7 +41,7 @@ body {
 .app-container {
   max-width: 360px;
   margin: 0 auto;
-  background-color: #313131;
+  background: url(/images/snow.jpg);
 }
 
 .app-header {
