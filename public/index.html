@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rep+</title>
+  <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:300,400" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Rep counter gym">
+  <title>Rep+</title>
 </head>
 <body>
-    
+  <div class="app-container">
+    <header>
+      <img src="/images/logo.png" alt="rep plus logo">
+    </header>
+    <div class="print-exercise">
+      <label for="exercise-name">Current Exercise</label>
+      <input id="exercise-name" type="text" class="fw-input" placeholder="Enter exercise">
+    </div>
+    <div class="display-container">
+      <div class="countdown-display">
+        <h2>Rest Countdown</h2>
+        <p>00:00</p>
+      </div>
+      <div class="rep-count">
+        <h2>Number of Reps</h2>
+          <p>0</p>
+      </div>
+    </div>
+    <div class="rep-controls">
+      <button>Rest</button>
+      <button>Rep</button>
+    </div>
+  </div>
 </body>
 </html>
